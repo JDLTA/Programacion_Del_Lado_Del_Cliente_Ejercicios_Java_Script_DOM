@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GENERAR CURP</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="scripts/curp.js"></script>
+
+</head>
+<body>
+		<h1>Generador de CURP</h1>
+		<form>
+			<input type="text" name="txtNombre" id="txtNombre" placeholder = "Ingresa nombre" required>
+			<hr>
+			<input type="text" name="txtApellidoPaterno" id="txtApellidoPaterno"  placeholder = "Ingresa primer apellido" required>
+			<hr>
+			<input type="text" name="txtApellidoMaterno" id="txtApellidoMaterno" placeholder = "Ingresa segundo apellido" required>
+			<hr>
+			<input type="radio" name="rb_sexo" id="rb_h" >
+		 	 <label>Hombre</label>
+		 	 <input type="radio" name="rb_sexo" id="rb_m" required>
+		 	 <label>Mujer</label>
+		 	 <hr>
+			<label >Fecha nacimiento:</label>
+			<input type="date" name="fechaDeNAcimiento" id="fechaDeNAcimiento" step="1" min="1900-01-01" max="2100-12-31" id="fechaDeNAcimiento" value="2018-10-09">
+			<hr>
+			<label>Estado origen:</label>
+			<select  name="LugarDeNAcimiento" id="LugarDeNAcimiento">
+			   <option>AGUASCALIENTES </option>
+                <option>BAJA CALIFORNIA NTE. </option>
+                <option>BAJA CALIFORNIA SUR </option>
+                <option>CAMPECHE </option>
+                <option>COAHUILA </option>
+                <option>COLIMA </option>
+                <option>CHIAPAS </option>
+                <option>CHIHUAHUA </option>
+                <option>DISTRITO FEDERAL </option>
+                <option>DURANGO </option>
+                <option>GUANAJUATO </option>
+                <option>GUERRERO </option>
+                <option>HIDALGO </option>
+                <option>JALISCO </option>
+                <option>MEXICO </option>
+                <option>MICHOACAN </option>
+                <option>MORELOS </option>
+                <option>NAYARIT </option>
+                <option>NUEVO LEON </option>
+                <option>OAXACA </option>
+                <option>PUEBLA </option>
+                <option>QUERETARO </option>
+                <option>QUINTANA ROO </option>
+                <option>SAN LUIS POTOSI </option>
+                <option>SINALOA </option>
+                <option>SONORA </option>
+                <option>TABASCO </option>
+                <option>TAMAULIPAS </option>
+                <option>TLAXCALA </option>
+                <option>VERACRUZ </option>
+                <option>YUCATAN </option>
+                <option>ZACATECAS </option>
+                <option>SERV. EXTERIOR MEXICANO </option>
+                <option>NACIDO EN EL EXTRANJERO </option>
+			</select>
+			<hr>
+			<button type="submit" onclick="generarCURP ();" id="btn_generar">GENERAR CURP</button>
+		</form>
+</body>
+</html>
